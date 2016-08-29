@@ -2,7 +2,7 @@
   <% if @tweet.errors.any? %>
     <div id="error_explanation">
       <h2>エラーがあります。</h2>
-      <% @blog.errors.full_messages.each do |msg| %>
+      <% @tweet.errors.full_messages.each do |msg| %>
           <%= msg %>
       <% end %>
     </div>

@@ -14,8 +14,8 @@ class TweetsController < ApplicationController
   end
 
   def create
-    @Tweet = Tweet.create(tweets_params)
-    if @Tweet.save
+    @tweet = Tweet.create(tweets_params)
+    if @tweet.save
       redirect_to tweets_path, notice: "つぶやきました！"
     else
       render action: "new"
@@ -49,6 +49,6 @@ class TweetsController < ApplicationController
     end
 
     def set_tweet
-      @tweet = Tweet.find(:id)
+      @tweet = Tweet.find(params[:id])
     end
 end
