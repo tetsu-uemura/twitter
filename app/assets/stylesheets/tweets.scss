@@ -4,8 +4,7 @@
 body {
   margin: 0;
   width: 100%;
-  background-size: cover;
-  background-image: url("images-master/header.jpg");
+  background-size: cover;;
   background-attachment: fixed;
   text-align: center;
 }
@@ -70,20 +69,6 @@ header {
 }
 
 
-.main-header {
-  padding-bottom: 15%;
-  width: 100%;
-  background-size: cover;
-  background-image: url("header.jpg");
-  background-attachment: fixed;
-}
-
-.main-header img {
-  display: block;
-  margin: 0 auto;
-  width: 25%;
-  padding-top: 16%;
-}
 
 .about {
   background-color: white;
